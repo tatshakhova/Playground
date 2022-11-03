@@ -1,5 +1,9 @@
-﻿int a = ReadInt("Введите число A: ");
-int b = ReadInt("Введите число B: ");
+﻿Console.WriteLine("Введите число A:");
+int a = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("Введите число B:");
+int b = Convert.ToInt32(Console.ReadLine());
+
 Degree(a, b);
 
 void Degree(int x, int y)
@@ -12,8 +16,3 @@ void Degree(int x, int y)
     Console.WriteLine(result);
 }
 
-int ReadInt(string message)
-{
-    Console.WriteLine(message);
-    return Convert.ToInt32(Console.ReadLine());
-}
